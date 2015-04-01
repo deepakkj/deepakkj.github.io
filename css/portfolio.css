@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    max-width: 1224px;
+    background: red;
+}
+
+.main {
+    font-family: 'Open Sans', sans-serif;
+    background-color: bisque;
+    padding: 0px;
+}
+
+.jumbotron {
+    padding: 0px;
+    margin: 0px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    /*  height: auto; 
+    width: auto;
+*/
+}
+
+.jumbotron-img {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.jumbotron-img img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.jumbotron-text {
+    position: absolute;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    background-color: darkkhaki;
+    margin: auto;
+    padding: 0px;
+    align-items: center;
+    align-content: center;
+}
+
+.jumbotron-text h1 {
+    font-size: 3vw;
+    padding: 0px;
+    margin: 0px;
+}
+
+.jumbotron-text p {
+    font-size: 2vw;
+    padding: 0px;
+    margin: 0px;
+}
+
+.about-me {
+    padding: 0px;
+    background-color: aqua;
+    border: 0px;
+    margin: 0px;
+}
+
+.profile-picture {}
+
+.description {}
+
+.brief-description {}
+
+.projects {
+    background-color: blueviolet;
+}
+
+.my-skills {
+    background-color: azure;
+}
+
+.contact-me {
+    background-color: cadetblue;
+}
+
+.navbar {
+    background-color: crimson;
+}
