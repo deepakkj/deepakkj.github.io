@@ -237,6 +237,7 @@ body {
       background-color: lightgrey; }
 
 #contact-me {
+  position: relative;
   background-color: black;
   background-image: url(../assets/patterns/hexabump.png);
   background-position: left;
@@ -244,6 +245,13 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   color: #fff; }
+  #contact-me .smiley {
+    position: absolute;
+    top: 7%;
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    right: 17%; }
   #contact-me .form-control {
     box-shadow: none;
     border: none;
