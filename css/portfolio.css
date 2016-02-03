@@ -170,7 +170,8 @@ body {
   background-color: #fff;
   padding-top: 60px;
   padding-bottom: 60px;
-  box-shadow: 0 5px 0 #ccc inset; }
+  box-shadow: 0 0px 15px #ccc inset;
+  -webkit-box-shadow: 0 0px 15px #ccc inset; }
   #about-me .my-image {
     width: 250px;
     height: 250px;

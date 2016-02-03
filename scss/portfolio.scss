@@ -1,0 +1,199 @@
+/*
+
+PORTFOLIO SITE SCSS
+
+*/
+
+@import 'variables';
+@import 'common-styles';
+@import 'mixins';
+@import 'animate';
+
+html, body {
+    background-color: $white;
+	margin: 0;
+	height: 100%;
+}
+
+body{
+font-family: $base-font-family;
+font-size: 16px;
+font-weight: 400;
+color: $very-dark-grey;
+}
+
+.navbar{
+	@extend .transparent-background;
+	border: none;
+	background-color: RGBA(0,0,0,0.5);
+	.nav{
+	
+	}
+}
+
+
+.jumbotron {
+    background-image: url('../assets/images/2.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    border-radius: 0px !important;
+    height: 600px;
+    width: 100%;
+	margin-bottom: 0;
+	
+	.jumbotron-content {
+		vertical-align: middle;
+    text-align: center;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		padding-bottom: 100px;
+		color: $white;
+		h1{
+		font-weight: 300;
+		}
+		p {
+    text-align: center;
+}
+}
+}
+
+.section-title{
+    text-rendering: geometricPrecision;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 30px;
+    word-spacing: 5px;
+}
+.sub-title{
+text-transform: none;
+	margin-bottom: 30px;
+	
+}
+
+#about-me {
+    background-color: $white;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	box-shadow: 0 0px 15px #ccc inset;
+	-webkit-box-shadow: 0 0px 15px #ccc inset;
+	.my-image{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;	
+	}
+	h2{
+	font-weight: 300;
+		margin-bottom: 20px;
+		strong{
+		font-weight: 400;
+		}
+	}
+}
+
+#projects {
+    padding: 60px 0;
+	background-image: url(../assets/patterns/grey.png);
+	background-position: left;
+	background-repeat: repeat;
+	background-size: contain;
+	
+	.view-all{
+	@include linkColor($white, $white, #00b279, null);
+    border-radius: 0px;
+	border-color: #009968;
+	}
+	
+}
+
+.thumbnail{
+    background: #fff;
+	border-radius: 0;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+	padding: 0;
+	margin-bottom: 30px;
+    text-align: center;
+	&.active, &:focus, &:hover{
+	text-decoration: none;
+	border: 1px solid #ddd !important;
+	}
+	img{
+	width: 360px;
+		height: 270px;
+	}
+	.caption{
+		position: relative;
+		padding-bottom: 30px;
+		overflow: hidden;
+	h5{
+	font-weight: 400;
+	margin: 0 0 15px 0;
+	}
+	p{}
+	.year{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+	background-color: lightgrey;
+	}
+	}
+}
+
+#contact-me{
+background-color: black;
+background-image: url(../assets/patterns/hexabump.png);
+	background-position: left;
+	background-repeat: repeat;
+padding-top: 60px;
+	padding-bottom: 60px;
+	color: $white;
+	.form-control{
+	box-shadow: none;
+    border: none;
+    border-radius: 0;
+    border-left: 3px solid #009968;
+    border-right: 3px solid #009968;
+    min-height: 45px;
+		margin-bottom: 30px;
+}
+	.submit-btn{
+	@include linkColor($white, $white, #00b279, null);
+    border-radius: 0px;
+	border-color: #009968;
+		margin-bottom: 60px;
+	}
+	.social-icons{
+	text-align: center;
+		margin: 30px 0 0 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $white;
+		border-top: 1px solid $white;
+		a{
+		@include linkColor($white, $white, transparent, transparent);
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	
+}
+
+#footer {
+    background-color: #05f5f5;
+}
+
+
+
+@import 'media-queries';
