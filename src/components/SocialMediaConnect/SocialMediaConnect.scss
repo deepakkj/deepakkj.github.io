@@ -1,0 +1,30 @@
+.social-media-connect {
+    a {
+        margin:  1rem 0.8rem;
+        svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin:  1rem 0.8rem;
+            color: #fff;
+            @media all and (max-width: 991px) {
+                width: 2.2rem;
+                height: 2.2rem;
+                margin: 1rem 0.5rem;
+              }
+        }
+        @media all and (max-width: 767px) {
+            margin: 1rem 0.6rem;
+          }
+        &:first-child {
+            margin-left: 0;
+            svg {
+                margin-left: 0;
+            }
+        } &:last-child {
+            margin-right: 0;
+            svg {
+                margin-right: 0;
+            }
+        }
+    }
+  }

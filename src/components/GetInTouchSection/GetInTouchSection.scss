@@ -1,0 +1,47 @@
+.contact-info-section {
+  .contact-info {
+    .svg-icon {
+      display: inline-flex;
+      margin-right: 1rem;
+      svg {
+        fill: green;
+        width: 32px;
+      }
+    }
+    a {
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      color: #47525e;
+    }
+  }
+}
+
+
+.center-or-div {
+    position: relative;
+    height: 100%;
+    .vertical-line {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 50% 50%;
+        padding: 1rem;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid #7E55F3;
+    }
+}
+
+.send-message-section {
+
+}

@@ -1,0 +1,38 @@
+.section-dark {
+    &.green {
+        background-color: #32CCBC;
+        color: #fff;
+    }
+    .title-text-color {
+        color: #fff;
+    }
+    .subtitle-text-color {
+        color: #fff;
+    }
+    .content {
+        .title, .subtitle {
+            color: inherit;
+        }
+    }
+}
+
+.title-text-color {
+    color: #5A6978;
+}
+
+.subtitle-text-color {
+    color: #969FAA;
+}
+
+.section-title {
+    margin-bottom: 3rem;
+    .underline {
+        &:before, &:after {
+            bottom: -0.3em;
+        }
+    }
+}
+
+.section-subtitle {
+    margin-bottom: 3rem;
+}
