@@ -1,6 +1,7 @@
 import React from "react";
 
 import SocialMediaConnect from './../SocialMediaConnect/SocialMediaConnect';
+import ContactMeForm from './ContactMeForm';
 
 import { ReactComponent as ICON_MAIL } from "../../images/001-envelope.svg";
 import { ReactComponent as ICON_WHATSAPP } from "../../images/002-phone-call.svg";
@@ -9,11 +10,6 @@ import "./GetInTouchSection.scss";
 
 
 const GetInTouchSection = () => {
-
-  const handleSendMessage = e => {
-    e.preventDefault();
-  }
-
   return (
     <section className="section container" id="getInTouchSection">
       <div className="">
@@ -58,35 +54,8 @@ const GetInTouchSection = () => {
             </div>
           </div>
           <div className="column is-5">
-            <div className="send-message-section">
-              <h4 className="subtitle has-text-dark-theme has-text-weight-semibold margin-bottom-1">Send a message instead</h4>
-              <form onSubmit={handleSendMessage}>
-                <div className="field margin-bottom-1">
-                  <label className="label is-hidden">Name</label>
-                  <div className="control">
-                    <input required className="input is-medium" type="text" placeholder="Your Name" />
-                  </div>
-                </div>
-                <div className="field margin-bottom-1">
-                  <label className="label is-hidden">Email</label>
-                  <div className="control">
-                    <input required className="input is-medium" type="text" placeholder="Your Email ID" />
-                  </div>
-                </div>
-                <div className="field margin-bottom-1">
-                  <label className="label is-hidden">Message</label>
-                  <div className="control">
-                    <textarea required rows="5" className="textarea is-medium" placeholder="Your message here..."></textarea>
-                  </div>
-                </div>
-                <div className="control">
-                  <button className="button is-primary is-medium" type="submit">Submit</button>
-                </div>
-              </form>
-            </div>
+            <ContactMeForm />
           </div>
-        
-        
         </div>
       </div>
     </section>
