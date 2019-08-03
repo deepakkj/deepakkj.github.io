@@ -33,7 +33,7 @@ function AboutMeSection() {
               </p>
             </div>
           </div>
-          <div className="column is-4-tablet is-3-desktop is-2-widescreen is-3-fullhd">
+          <div className="column is-6-mobile is-4-tablet is-3-desktop is-2-widescreen is-3-fullhd is-centered">
             <figure class="image about-me-person-img">
               <img src={IMG_PERSON} alt="Deepak Kumar Jain" />
             </figure>

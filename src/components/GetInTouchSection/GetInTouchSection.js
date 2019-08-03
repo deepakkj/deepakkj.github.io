@@ -15,17 +15,13 @@ const GetInTouchSection = () => {
       <div className="">
         <h2 className="title section-title is-spaced has-text-centered is-size-3-tablet title-text-color"><span className="underline dark-grey">Get In Touch</span></h2>
         <h3 className="subtitle section-subtitle has-text-centered has-text-weight-normal subtitle-text-color">
-          Do you want to discuss problems?
-          <br />
-          Do you have ideas that you want to share or co-create with me?
-          <br />
-          Do you want to hire me(part-time/full-time/freelance/remote)?
-          <br />
-          Do you want me to start-up with you?
-          <br />
-          Or
-          <br />
-          Do you just want to know me better?
+          <span className="tag-pill bg-9C27B0">Do you have ideas that you want to share or co-create with me?</span>
+          <span className="tag-pill bg-673AB7">Do you want to hire me(part-time/full-time/freelance/remote)?</span>
+          <span className="tag-pill bg-3F51B5">Do you want to give feedback about this site?</span>
+          <span className="tag-pill bg-2196F3">Do you want to give feedback about me?</span>
+          <span className="tag-pill bg-03A9F4">Do you just want to know me better?</span>
+          <span className="tag-pill bg-00BCD4">Do you want me to start-up with you?</span>
+          <span className="tag-pill bg-969FAA">Do you want to discuss problems?</span>
         </h3>
       </div>
       <div className="margin-bottom-0">

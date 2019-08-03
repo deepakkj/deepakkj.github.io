@@ -4,8 +4,8 @@
       display: inline-flex;
       margin-right: 1rem;
       svg {
-        fill: green;
-        width: 32px;
+        fill: #008000;
+        width: 2rem;
       }
     }
     a {
@@ -40,6 +40,16 @@
         transform: translateX(-50%);
         border: 1px solid #7E55F3;
     }
+}
+
+.tag-pill {
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding: 4px 10px;
+  display: inline-block;
+  margin: 8px;
+  word-break: normal;
+  color: #fff;
 }
 
 .send-message-section {
