@@ -12,7 +12,7 @@ const HomePageBanner = () => {
             <div className="bg-img">
               <div className="content has-text-white has-text-centered">
                 <h1 className="title has-text-white is-size-4-mobile is-size-1-tablet">Hi, I'm <span className="underline white">Deepak Kumar Jain</span>.</h1>
-                <h2 className="subtitle has-text-white is-size-5-mobile is-size-3-tablet has-text-weight-light margin-top-0">An Engineer by passion <br/>who loves to build products that has <br />the potential to make an <span className="underline white">impact</span>.</h2>
+                <h2 className="subtitle has-text-white is-size-5-mobile is-size-3-tablet has-text-weight-light margin-top-0">An Engineer by passion <br/>who loves to build products that has <br />the potential to make an <span className="has-text-weight-normal">impact</span>.</h2>
                 <SocialMediaConnect fillColor="rgba(255, 255, 255, 0.8)" />
               </div>
           </div>
