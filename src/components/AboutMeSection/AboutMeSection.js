@@ -1,12 +1,12 @@
 import React from "react";
 
-import IMG_PERSON from './../../images/deepakkumarjain.jpg';
+import { IMG_PERSON } from './../../images';
 import "./AboutMeSection.scss";
 
 
 function AboutMeSection() {
   return (
-    <section className="section section-dark green container is-fluid is-marginless">
+    <section className="section section-dark green container is-fluid is-marginless bg-image-white">
       <div className="">
         <h2 className="title section-title is-spaced has-text-centered is-size-3-tablet title-text-color"><span className="underline white">About Me</span></h2>
         <h3 className="subtitle section-subtitle has-text-centered has-text-weight-normal subtitle-text-color">I am using this section, to brag about myself.</h3>
