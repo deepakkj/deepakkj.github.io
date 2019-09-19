@@ -161,9 +161,18 @@ $navbar-burger-color: #fff;
 }
 
 .card {
-    transition: all 0.3s ease-in-out;
+    .card-image {
+        figure {
+            transition: all 0.3s ease-in-out;
+        }
+    }
     &:hover {
-        transform: scale(1.05);
+        .card-image {
+            border-color: #306ce0;
+            figure {
+                transform: scale(1.05);
+            }
+        }
     }
 }
 
