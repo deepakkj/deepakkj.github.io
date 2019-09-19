@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PureComponent } from "react";
 
 import "./HomePage.scss";
 
@@ -12,18 +12,25 @@ import Footer from './../../components/Footer/Footer';
 
 import allProjectData from '../../allProjects.js'
 
-function HomePage() {
-  return (
-    <>
-      <Navbar />
-      <HomePageBanner />
-      <ProjectsSection projects={allProjectData} limit={3} />
-      <AboutMeSection />
-      <ClientsListSection />
-      <GetInTouchSection />
-      <Footer />
-    </>
-  );
+class HomePage extends PureComponent {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+    document.title = 'Deepak Kumar Jain';
+  }
+  render() {
+    const { history } = this.props;
+    return (
+      <>
+        <Navbar history={history} />
+        <HomePageBanner />
+        <ProjectsSection projects={allProjectData} limit={3} />
+        <AboutMeSection />
+        <ClientsListSection />
+        <GetInTouchSection />
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default HomePage;

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 import { IMG_LOGO } from "../../images";
 import "./navbar.scss";
 
@@ -19,7 +20,7 @@ class Navbar extends Component {
   }
 
   componentWillUnmount() {
-    document.addEventListener('scroll');
+    document.removeEventListener('scroll', this.onScroll);
   }
 
   getNavbarClass = () => {
@@ -41,32 +42,33 @@ class Navbar extends Component {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <a className="navbar-item" href="/" rel="noopener noreferrer">
+          <Link className="navbar-item navbar-brand-logo-item" to="/">
             <img
               className="navbar-brand-logo"
               src={IMG_LOGO}
               width="112"
               height="28"
+              alt="Deepak Kumar Jain"
             />
-          </a>
+          </Link>
 
-          <a
-            role="button"
+          <button
             className="navbar-burger burger"
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
+            rel="noopener noreferrer"
           >
             <span aria-hidden="true" />
             <span aria-hidden="true" />
             <span aria-hidden="true" />
-          </a>
+          </button>
         </div>
 
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-end">
             {/* <a className="navbar-item has-text-white" href="#">Home</a> */}
-            <a className="navbar-item has-text-white" href="/project" rel="noopener noreferrer">Projects</a>
+            <Link className="navbar-item has-text-white" to="/project">Projects</Link>
             <div className="navbar-item">
               <div className="buttons">
                 <a className="button is-primary is-inverted is-outlined" href="http://bit.ly/deepakkumarjain_cv_resume" target="_blank" rel="noopener noreferrer">

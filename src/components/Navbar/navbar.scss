@@ -5,14 +5,21 @@
 	transition-delay: 0s;
 	opacity: 1;
 	.navbar-brand {
+		.navbar-brand-logo-item {
+			&:hover {
+				background-color: transparent !important;
+			}
+		}
 		.navbar-item {
 			.navbar-brand-logo {
 				max-height: 3rem;
 			}
 			@media all and (max-width: 1023px) {
-				.navbar-brand-logo {
-					max-height: 2.5rem;
-					margin-left: -10px;
+				.navbar-brand-logo-item {
+					.navbar-brand-logo {
+						max-height: 2.5rem;
+						margin-left: -10px;
+					}
 				}
 			}
 		}
