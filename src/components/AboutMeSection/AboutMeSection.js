@@ -6,15 +6,16 @@ import "./AboutMeSection.scss";
 
 function AboutMeSection() {
   return (
-    <section className="section section-dark green container is-fluid is-marginless bg-image-white">
+    <section className="section section-dark green container is-fluid is-marginless bg-aboutme">
       <div className="">
         <h2 className="title section-title is-spaced has-text-centered is-size-3-tablet title-text-color"><span className="underline white">About Me</span></h2>
         <h3 className="subtitle section-subtitle has-text-centered has-text-weight-normal subtitle-text-color">I am using this section, to brag about myself.</h3>
       </div>
+      <div className="empty-div-aboutme" />
       <div className="margin-bottom-2">
         <div className="columns is-variable is-5-tablet is-6-desktop is-8-widescreen is-8-fullhd is-centered is-vcentered">
 
-          <div className="column is-6-tablet is-5-desktop is-4-widescreen is-4-fullhd">
+          <div className="column is-6-tablet is-5-desktop is-4-widescreen is-4-fullhd content-wrapper">
             <div className="content">
               <h4 className="title">I currently work at Falabella <br />as Software Engineer.</h4>
               <p>
@@ -31,12 +32,13 @@ function AboutMeSection() {
                 I also keep an eye on user experience, design
   and artificial intelligence .
               </p>
+              <br />
             </div>
           </div>
           <div className="column is-6-mobile is-4-tablet is-3-desktop is-2-widescreen is-3-fullhd is-centered">
-            <figure className="image about-me-person-img">
+            {/* <figure className="image about-me-person-img">
               <img src={IMG_PERSON} alt="Deepak Kumar Jain" />
-            </figure>
+            </figure> */}
           </div>
         </div>
       </div>
