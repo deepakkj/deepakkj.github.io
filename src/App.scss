@@ -162,13 +162,14 @@ $navbar-burger-color: #fff;
 
 .card {
     .card-image {
+        box-shadow: 4px 4px 8px 0 rgba(0,0,0,.1);
         figure {
             transition: all 0.3s ease-in-out;
         }
     }
     &:hover {
         .card-image {
-            border-color: #306ce0;
+            box-shadow: 1px 6px 10px 1px rgba(0, 0, 0, 0.2);
             figure {
                 transform: scale(1.05);
             }
