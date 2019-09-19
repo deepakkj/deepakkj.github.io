@@ -22,10 +22,21 @@ class Navbar extends Component {
     document.addEventListener('scroll');
   }
 
+  getNavbarClass = () => {
+    const { theme } = this.props;
+    const { isTop } = this.state;
+    if (theme === 'dark') {
+      return isTop ? 'dark-navbar is-dark' : 'dark-navbar is-dark navbar-decrease'
+    } else {
+      return isTop ? 'transparent-navbar is-transparent' : 'dark-navbar is-dark navbar-decrease';
+    }
+  }
+
   render() {
+    const navBarClass = this.getNavbarClass();
     return (
       <nav
-        className={`navbar is-spaced is-fixed-top ${this.state.isTop ? 'transparent-navbar is-transparent' : 'dark-navbar is-dark'}`}
+        className={`navbar is-spaced is-fixed-top ${navBarClass}`}
         role="navigation"
         aria-label="main navigation"
       >
@@ -55,7 +66,7 @@ class Navbar extends Component {
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-end">
             {/* <a className="navbar-item has-text-white" href="#">Home</a> */}
-            <a className="navbar-item has-text-white">Projects</a>
+            <a className="navbar-item has-text-white" href="/project">Projects</a>
             <div className="navbar-item">
               <div className="buttons">
                 <a className="button is-primary is-inverted is-outlined">
@@ -70,5 +81,9 @@ class Navbar extends Component {
     );
   }
 }
+
+Navbar.defaultProps = {
+  theme: 'transparent'
+};
 
 export default Navbar;

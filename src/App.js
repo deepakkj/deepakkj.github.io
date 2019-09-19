@@ -1,25 +1,23 @@
 import React from "react";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import "./App.scss";
 
-import Navbar from './components/Navbar/Navbar';
-import HomePageBanner from './components/HomePageBanner/HomePageBanner';
-import ProjectsSection from './components/ProjectsSection/ProjectsSection';
-import AboutMeSection from './components/AboutMeSection/AboutMeSection';
-import ClientsListSection from './components/ClientsListSection/ClientsListSection';
-import GetInTouchSection from './components/GetInTouchSection/GetInTouchSection';
-import Footer from './components/Footer/Footer';
+import HomePage from './pages/HomePage/HomePage';
+import AllProjectsPage from './pages/AllProjectsPage/AllProjectsPage';
+// import Navbar from './components/Navbar/Navbar';
+// import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <HomePageBanner />
-      <ProjectsSection />
-      <AboutMeSection />
-      <ClientsListSection />
-      <GetInTouchSection />
-      <Footer />
+    <div className="app">
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/project" component={AllProjectsPage} />
+          <Route component={HomePage} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

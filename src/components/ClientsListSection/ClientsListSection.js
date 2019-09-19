@@ -46,7 +46,7 @@ const ClientsListSection = () => {
 return (
   <section className="section container" id="clients">
     <div className="">
-      <h2 className="title section-title is-spaced has-text-centered is-size-3-tablet title-text-color"><span className="underline dark-grey">Clients worked with</span></h2>
+      <h2 className="title section-title is-spaced has-text-centered is-size-3-tablet title-text-color"><span className="underline dark-grey">Clients</span></h2>
       <h3 className="subtitle section-subtitle has-text-centered has-text-weight-normal subtitle-text-color">Some of the amazing clients that I have got an opportunity to worked with.</h3>
     </div>
     <CustomCarousel cards={logos} />
