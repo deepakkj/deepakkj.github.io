@@ -1,6 +1,6 @@
 import React from "react";
 
-// import "./ProjectsSection.scss";
+import "./ProjectCard.scss";
 
 const ProjectCard = ({ cardThumbnailImg, cardTitle, cardSubtitle, cardDesc, cardDate, dateTime }) => {
     return (

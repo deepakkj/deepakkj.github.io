@@ -34,7 +34,7 @@ const ProjectsSection = ({ sectionTitle, sectionSubtitle, projects, limit }) => 
       {
         (limit && limit !== projects.length) ?
       <div className="has-text-centered">
-        <a className="button is-outlined is-primary" href="/project">View All Projects</a>
+        <a className="button is-outlined is-primary" href="/project" rel="noopener noreferrer">View All Projects</a>
       </div>
       : null
       }

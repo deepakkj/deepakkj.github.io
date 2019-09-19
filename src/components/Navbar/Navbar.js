@@ -41,7 +41,7 @@ class Navbar extends Component {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <a className="navbar-item" href="/">
+          <a className="navbar-item" href="/" rel="noopener noreferrer">
             <img
               className="navbar-brand-logo"
               src={IMG_LOGO}
@@ -66,13 +66,13 @@ class Navbar extends Component {
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-end">
             {/* <a className="navbar-item has-text-white" href="#">Home</a> */}
-            <a className="navbar-item has-text-white" href="/project">Projects</a>
+            <a className="navbar-item has-text-white" href="/project" rel="noopener noreferrer">Projects</a>
             <div className="navbar-item">
               <div className="buttons">
-                <a className="button is-primary is-inverted is-outlined">
+                <a className="button is-primary is-inverted is-outlined" href="http://bit.ly/deepakkumarjain_cv_resume" target="_blank" rel="noopener noreferrer">
                   Download CV
                 </a>
-                <a className="button is-border-white is-inverted" href="#getInTouchSection">Get In Touch</a>
+                <a className="button is-border-white is-inverted" href="#getInTouchSection" rel="noopener noreferrer">Get In Touch</a>
               </div>
             </div>
           </div>

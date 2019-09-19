@@ -29,13 +29,13 @@ const GetInTouchSection = () => {
           <div className="column is-5">
             <div className="contact-info-section margin-bottom-3">
               <h4 className="subtitle has-text-dark-theme has-text-weight-semibold margin-bottom-1">You can reach me via</h4>
-              <p className="contact-info has-text-weight-light margin-bottom-0point5 is-size-5"><a href="mailto: deepakkumarjain21@gmail.com"><span className="svg-icon">
+              <p className="contact-info has-text-weight-light margin-bottom-0point5 is-size-5"><a href="mailto: deepakkumarjain21@gmail.com" rel="noopener noreferrer"><span className="svg-icon">
                 <ICON_MAIL />
               </span>deepakkumarjain21@gmail.com</a></p>
-              <p className="contact-info has-text-weight-light margin-bottom-0point5 is-size-5"><a href="tel:+91-9036871823"><span className="svg-icon">
+              <p className="contact-info has-text-weight-light margin-bottom-0point5 is-size-5"><a href="tel:+91-9036871823" rel="noopener noreferrer"><span className="svg-icon">
                 <ICON_WHATSAPP />
               </span>+91-9036871823</a></p>
-              <p className="contact-info has-text-weight-light margin-bottom-0point5 is-size-5"><a href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9542946,77.4908545,11z/"><span className="svg-icon">
+              <p className="contact-info has-text-weight-light margin-bottom-0point5 is-size-5"><a href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9542946,77.4908545,11z/" rel="noopener noreferrer"><span className="svg-icon">
                 <ICON_HOME />
               </span>Bengaluru, India</a></p>
             </div>
