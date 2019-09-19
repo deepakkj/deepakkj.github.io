@@ -194,6 +194,13 @@ $navbar-burger-color: #fff;
     background-color: #969FAA;
 }
 
+.bg-image-white {
+    background-image: url('./images/bg-tools.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 
 @media all and (max-width: 991px) {
     html {

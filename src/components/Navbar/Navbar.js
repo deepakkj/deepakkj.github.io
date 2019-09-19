@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import IMG_LOGO from "../../images/dkj.svg";
+import { IMG_LOGO } from "../../images";
 import "./navbar.scss";
 
 class Navbar extends Component {

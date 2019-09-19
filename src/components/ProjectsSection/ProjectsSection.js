@@ -2,10 +2,7 @@ import React from "react";
 
 import "./ProjectsSection.scss";
 
-import IMG_PROJECT_PREVIEW_MUTEX from './../../images/project_preview/mutex_homepage.png';
-import IMG_PROJECT_PREVIEW_DECO_TRANSACTIONAL from './../../images/project_preview/deco_transactional.png';
-import IMG_PROJECT_PREVIEW_DECO_TRANSACTIONAL_BACKOFFICE from './../../images/project_preview/backoffice.png';
-
+import { IMG_PROJECT_PREVIEW_MUTEX, IMG_PROJECT_PREVIEW_DECO_TRANSACTIONAL, IMG_PROJECT_PREVIEW_DECO_TRANSACTIONAL_BACKOFFICE } from './../../images';
 
 const ProjectsSection = () => {
   return (
