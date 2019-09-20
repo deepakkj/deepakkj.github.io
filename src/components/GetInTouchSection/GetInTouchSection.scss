@@ -2,6 +2,7 @@
   .contact-info {
     .svg-icon {
       display: inline-flex;
+      display: -webkit-box; 
       margin-right: 1rem;
       svg {
         fill: #008000;

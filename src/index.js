@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { WebpMachine } from "webp-hero";
+
+const webpMachine = new WebpMachine();
+webpMachine.polyfillDocument();
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

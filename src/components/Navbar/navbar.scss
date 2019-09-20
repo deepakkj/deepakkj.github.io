@@ -6,13 +6,14 @@
 	opacity: 1;
 	.navbar-brand {
 		.navbar-brand-logo-item {
-			&:hover {
+			&:hover, &:focus {
 				background-color: transparent !important;
 			}
 		}
 		.navbar-item {
 			.navbar-brand-logo {
 				max-height: 3rem;
+				margin-top: -8px;
 			}
 			@media all and (max-width: 1023px) {
 				.navbar-brand-logo-item {
@@ -24,7 +25,8 @@
 			}
 		}
 		.navbar-burger {
-
+			background-color: transparent;
+			border: none;
 		}
 	}
 	.navbar-menu {
@@ -49,13 +51,18 @@
 	}
 	&.is-dark {
 		.navbar-end {
+			a.navbar-item {
+				&:focus {
+					background: transparent;
+				}
+			}
 			& > {
 				a.navbar-item {
 					&:hover {
 						background-color: transparent;
 						color: #fff !important;
 						font-weight: 600;
-					}
+					}				
 				}
 			}
 		}

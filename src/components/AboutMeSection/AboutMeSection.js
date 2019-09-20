@@ -6,7 +6,7 @@ import "./AboutMeSection.scss";
 
 function AboutMeSection() {
   return (
-    <section className="section section-dark green container is-fluid is-marginless bg-aboutme">
+    <section className="section section-dark green container is-fluid is-marginless bg-aboutme" id="aboutMeSection">
       <div className="">
         <h2 className="title section-title is-spaced has-text-centered is-size-3-tablet title-text-color"><span className="underline white">About Me</span></h2>
         <h3 className="subtitle section-subtitle has-text-centered has-text-weight-normal subtitle-text-color">I am using this section, to brag about myself.</h3>
