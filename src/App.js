@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
+import GA from './tracking';
 import "./App.scss";
 
 import HomePage from './pages/HomePage/HomePage';
@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
+      { GA.init() && <GA.RouteTracker /> }
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/project" component={AllProjectsPage} />
