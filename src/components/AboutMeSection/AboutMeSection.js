@@ -17,7 +17,7 @@ function AboutMeSection() {
 
           <div className="column is-6-tablet is-5-desktop is-4-widescreen is-4-fullhd content-wrapper">
             <div className="content">
-              <h4 className="title">I currently work at Falabella <br />as Software Engineer.</h4>
+              <h4 className="title">I currently work at Falabella <br />as Senior Software Engineer.</h4>
               <p>
                 I'm a product enthusiast while always working hard to solve  users problems with an entrepreneurial mindset.
               </p>

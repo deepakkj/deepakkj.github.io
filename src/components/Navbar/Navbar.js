@@ -103,11 +103,11 @@ class Navbar extends Component {
             {/* <a className="navbar-item has-text-white" href="#">Home</a> */}
             <Link className="navbar-item has-text-white" to="/#aboutMeSection" scroll={this.gotoSection}>About Me</Link>
             <Link className="navbar-item has-text-white" to="/project">All Projects</Link>
-            <div className="navbar-item">
+            {/* <div className="navbar-item">
                 <a className="button is-primary is-inverted is-outlined" href="http://bit.ly/deepakkumarjain_cv_resume" target="_blank" rel="noopener noreferrer">
                   Download CV
                 </a>
-            </div>
+            </div> */}
             <div className="navbar-item">
               <Link className="button is-border-white is-inverted" to="/#getInTouchSection" scroll={this.gotoSection}>Get In Touch</Link>
                 {/* <a className="button is-border-white is-inverted" href="#getInTouchSection" rel="noopener noreferrer">Get In Touch</a> */}
