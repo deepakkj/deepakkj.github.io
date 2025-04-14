@@ -17,16 +17,15 @@ function AboutMeSection() {
 
           <div className="column is-6-tablet is-5-desktop is-4-widescreen is-4-fullhd content-wrapper">
             <div className="content">
-              <h4 className="title">I currently work at Falabella <br />as Senior Software Engineer.</h4>
+              <h4 className="title">I currently work at Falabella <br />as Software Architect.</h4>
               <p>
-                I'm a product enthusiast while always working hard to solve  users problems with an entrepreneurial mindset.
+                I'm a product and tech enthusiast while always working hard to solve users problems with an entrepreneurial mindset.
               </p>
               <p>
-                Though my expertise lies in  bringing great user experience to life, I don't limit myself to just front end development.
+                I have a proven track record of building highly scalable front-end and backend applications.
               </p>
               <p>
-                I banter between scaling front-end applications
-  and learning back-end development.
+                I specialize in architecting robust, high-performance platforms that power enterprise-grade e-commerce ecosystems.
               </p>
               <p>
                 I also keep an eye on user experience, design
